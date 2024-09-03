@@ -1,0 +1,7 @@
+Generate the Rainbow Table:
+    Create a function that takes a list of possible passwords and hashes each one.
+    Store the hashed values and corresponding plaintext passwords in a dictionary.
+    Save this dictionary to a file (e.g., using Python's pickle module).
+Use the Rainbow Table:
+    Load the rainbow table from the file.
+    Check if the hash exists in the table and return the corresponding password.
