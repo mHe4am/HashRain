@@ -31,9 +31,12 @@ def loadData(loadFile):
     try:
         if not os.path.exists(loadFile):
             return {}
-        with open(loadFile, 'rb') as file:
-            data = pickle.load(file)
-            return data
+        if os.path.getsize(loadFile) > 0:
+            with open(loadFile, 'rb') as file:
+                data = pickle.load(file)
+                return data
+        else:
+            return {}
     except PermissionError:
         print("\n[-] Permission denied: Unable to read the file.")
         sys.exit(1)
@@ -50,7 +53,7 @@ def loadData(loadFile):
 # Load wordlist from a file
 def readFile(filePath):
     try:
-        with open(filePath, 'r') as file:
+        with open(filePath, 'r', encoding='utf-8') as file:
             # strips and removes empty lines, returns a list/array
             wordlist = [line.strip() for line in file if line.strip()]
         return wordlist
