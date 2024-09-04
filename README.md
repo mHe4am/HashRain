@@ -60,13 +60,13 @@ If the hash is found in the rainbow table, the corresponding plaintext value wil
 
 
 ## To Do
-[x] Implement other hashing algorithms besides the md5 
-[x] Implement Dynamic Hashing Algorithms: Allow the user to specify different hashing algorithms.
-[x] Test the function with different passwords and hash algorithms to confirm it produces the expected results.
-[ ] Adding more Hashes Algorithms
-[ ] Give user the option to search in a specific databases (e.g. sha1 db only) (Cracker)
-[ ] Exclude some databases depending on the length of the given Hash (Cracker)
-[ ] Crack a list of Hashes (hashes.txt)
+- [x] Implement additional hashing algorithms beyond MD5
+- [x] Allow dynamic selection of hashing algorithms
+- [x] Verify functionality with various passwords and hashing algorithms
+- [ ] Add support for more hashing algorithms
+- [ ] Provide an option to search within specific databases (e.g., SHA-1 only) (Cracker)
+- [ ] Exclude databases based on hash length (Cracker)
+- [ ] Implement functionality to crack a list of hashes (e.g., `hashes.txt`)
 
 
 ## Contributing
